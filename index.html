@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Math Clash</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+
+    <!--bootstrap-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="header heading">
+      <h1>Math Clash</h1>
+    </div>
+    <div class="container-fluid gamecontainer">
+      <div class="row gamerow">
+        <div class="col-lg-6 col-md-6">
+          <div class="container-fluid gamerow">
+            <div class="row row1">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                <div class="header innnerhead">Target</div>
+                <div id="target" class="center"></div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                  <div class="header innnerhead">Sum</div>
+                <div id="sum" class="center"></div>
+              </div>
+            </div>
+            <div class="row scoree center">
+               
+              <h3 id="score"></h3>
+            </div>
+          </div>
+        </div>
+        <divc class="col-lg-6 col-md-6">
+          <div class="container-fluid">
+            <div class="center"><button onclick="buttonclicked()" class="button" id="btn">
+                Start Game
+              </button></div>
+              <div class="hide row" id="bottomrow" >
+                  <div id="summ" class="center" ></div>
+                <div class="timer center" id="time"></div>
+                  <div class="container-fluid" id="board"></div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <audio id="audio1" src="audio1.mp3"></audio>
+      <audio id="audio2" src="audio2.wav"></audio>
+      <audio id="wrong" src="wrong.wav"></audio>
+    <script src="index.js"></script>
+  </body>
+</html>
